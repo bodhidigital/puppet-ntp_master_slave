@@ -1,0 +1,28 @@
+{
+  "name": "bodhi-ntp_master_slave",
+  "version": "0.1.0",
+  "author": "bodhi",
+  "summary": "Setup NTP on a LAN with only a some hosts reaching out of the network.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/bodhidigital/puppet-ntp_master_slave",
+  "project_page": "https://github.com/bodhidigital/puppet-ntp_master_slave",
+  "issues_url": "https://github.com/bodhidigital/puppet-ntp_master_slave/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-ntp",
+      "version_requirement": ">= 6.0.0 < 7.0.0"
+    },
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.13.0 < 5.0.0"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.5.0 < 6.0.0"
+    }
+  ],
+  "data_provider": null
+}
+

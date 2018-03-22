@@ -11,9 +11,9 @@ class ntp_master_slave::params {
     $::networking['hostname'],
     $::networking['fqdn'],
   ]
-  $this_ips           = flatten($::networking['interfaces'].map |$k, $v| {
+  $this_ips           = delete_undef_values(flatten($::networking['interfaces'].map |$k, $v| {
     [ $v['ip'], $v['ip6'] ]
-  })
+  }))
   $this_hosts         = concat($this_hostnames, $this_ips)
 }
 

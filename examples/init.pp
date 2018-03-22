@@ -11,7 +11,7 @@
 #
 class { '::ntp_master_slave':
   masters => {
-    'ntp1'  => [ '0.pool.ntp.org', '1.pool.ntp.org' ],
-    'ntp2'  => [ '2.pool.ntp.org', '3.pool.ntp.org' ],
+    'ntp1.my.domain'  => [ '0.pool.ntp.org', '1.pool.ntp.org' ],
+    'ntp2.my.domain'  => [ '2.pool.ntp.org', '3.pool.ntp.org' ],
   },
 }
